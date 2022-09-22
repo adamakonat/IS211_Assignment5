@@ -10,9 +10,9 @@ import urllib
 import argparse
 import os
 
+url= 'http://s3.amazonaws.com/cuny-is211-spring2015/requests.csv'
 
 # In[3]:
-
 
 class Queue:
     """A queue class that stores data.
@@ -37,7 +37,6 @@ class Queue:
 
 
 # In[4]:
-
 
 class Server(object):
     """A computer server class that performs server functions passed from the simulateOneServer function.
@@ -68,7 +67,6 @@ class Server(object):
 
 # In[5]:
 
-
 class Request(object):
     """A Request class that simulates requests to a server using objects passed from the simulateOneServer function.
     Args:
@@ -90,7 +88,6 @@ class Request(object):
 
 
 # In[5]:
-
 
 def simulateOneServer(datafile):
     """Function that simulates a server by operating on a list of requests contained in a file. 
@@ -128,7 +125,6 @@ def simulateOneServer(datafile):
 
 # In[7]:
 
-
 def simulateManyServers(request_file, servers):
     """Function that simulates many servers.
     Args:
@@ -158,7 +154,7 @@ def main():
     Args:
     Returns:
     """
-    
+   
     if not args.url:
         raise SystemExit
     try:
